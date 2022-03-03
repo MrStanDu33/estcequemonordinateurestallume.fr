@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body > img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-position: center bottom;
+  object-fit: cover;
+}
+
+h1 {
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 140px;
+  margin: 0;
+}
+
+body > #loader {
+  background-color: #fff;
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+  animation: 0.3s linear 2s forwards fadeout;
+}
+
+body > #loader > .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body > #loader > .wrapper > .dots {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+body > #loader > .wrapper > .dots > .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  animation: 1s linear infinite jump;
+  position: relative;
+  top: 0;
+}
+
+body > #loader > .wrapper > .dots > .dot:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+body > #loader > .wrapper > .dots > .dot:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+
+body > #loader > .wrapper > .dots > .dot:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+body > #loader > .wrapper > .text {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0;
+    display: block;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+
+  33% {
+    top: -10px;
+  }
+
+  66% {
+    top: 0;
+  }
+
+  100% {
+    top: 0;
+  }
+}
