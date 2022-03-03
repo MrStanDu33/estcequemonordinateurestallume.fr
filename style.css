@@ -83,11 +83,13 @@ body > #loader > .wrapper > .text {
     display: block;
     visibility: visible;
   }
+
   99% {
     opacity: 0;
     display: block;
     visibility: visible;
   }
+
   100% {
     opacity: 0;
     display: none;
