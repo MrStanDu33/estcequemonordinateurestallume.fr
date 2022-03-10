@@ -71,19 +71,50 @@
     <meta name="geo.position" content="44.8719499;-0.5806985" />
     <link rel="canonical" href="/" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
+      type="text/css"
+      href="./style.css"
+      integrity="sha384-FapEPpsr2lR2G/tmcBBZxpWQxmUTlJORPHQM1BxnUNEdWSWRhcANgyjtovo0kzIz"
+      crossorigin="anonymous"
     />
-    <script src="./script.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      integrity="sha384-0wcy8qFgK2KW18OIp7CDk5LA4IXc+dCW2jh5umyKxHgJWDx+o57w1LK/ZVNi73PQ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      integrity="sha384-o+SdmONPZGMQfeWYDOyRHbCBLFsppgowAJHA03UUCGF5mIUIeuD1EYnqbMqOqxeT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      crossorigin="anonymous"
+    />
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W8ZPG4HCEW"
+      src="./script.js"
+      integrity="sha384-5LH671ObtbMj+KWAYrn5j6rMPT6AX1fSv2mfdWat7Qm5dtjL/i3/QR2tpejFRCtC"
+      crossorigin="anonymous"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        var n = d.querySelector('[nonce]');
+        n && j.setAttribute('nonce', n.nonce || n.getAttribute('nonce'));
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'G-W8ZPG4HCEW');
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
