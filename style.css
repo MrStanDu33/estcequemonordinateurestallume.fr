@@ -82,7 +82,8 @@ body > #loader > .wrapper > .text {
 .device-recommendation {
   display: none;
   margin: auto;
-  margin-top: 50vh;
+  position: relative;
+  top: 50vh;
   transform: translateY(-50%);
   width: 100%;
   max-width: 400px;
@@ -94,6 +95,7 @@ body > #loader > .wrapper > .text {
   .device-recommendation {
     display: block;
   }
+
   main {
     display: none;
   }
@@ -116,6 +118,7 @@ body > #loader > .wrapper > .text {
     opacity: 0;
     display: none;
     visibility: hidden;
+    pointer-events: none;
   }
 }
 
