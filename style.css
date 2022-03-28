@@ -5,9 +5,11 @@
 html,
 body {
   margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-body > img {
+body > main > img {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -75,6 +77,26 @@ body > #loader > .wrapper > .text {
   margin-top: 10px;
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
+}
+
+.device-recommendation {
+  display: none;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .device-recommendation {
+    display: block;
+  }
+  main {
+    display: none;
+  }
 }
 
 @keyframes fadeout {
